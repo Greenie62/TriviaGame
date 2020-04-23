@@ -276,7 +276,10 @@ function gameOver(){
     gameAreaDOM.innerHTML=""
      
     let html=""
-    if(highScore){
+    if(highScore == null){
+        console.log("hit the null condition!")
+    }
+    if(highScore != null){
     if(score > highScore.score){
         html += '<h3>Congrats, new high score!!</h3>'
     }
