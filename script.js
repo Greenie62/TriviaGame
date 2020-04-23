@@ -297,7 +297,7 @@ function gameOver(){
           
 
     gameAreaDOM.innerHTML=html;
-    gameoverrowDOM.innerHTML=`<div style="display:flex;align-items:center;justify-content:space-evenly;background:rgb(0,255,0,0.2)"<h1>Game Over</h1><div><h3>Score:${score}</h3><button onclick=restart() class='replayBtn'>Play Again!</button></div>`
+    // gameoverrowDOM.innerHTML=`<div style="display:flex;align-items:center;justify-content:space-evenly;background:rgb(0,255,0,0.2)"<h1>Game Over</h1><div><h3>Score:${score}</h3><button onclick=restart() class='replayBtn'>Play Again!</button></div>`
 
 
     setHighScore(score)
