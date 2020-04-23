@@ -289,7 +289,7 @@ function gameOver(){
      html += `<div class='gameOverDiv'>
         <h1>GAME OVER!! </h1>
         <h2>Score:${score}</h2>
-        <h2>HighScore:${highScore.score}</h2>
+        <h2>HighScore:${highScore ? highScore.score : 0}</h2>
             <button onclick=restart() class='replayBtn'>Play Again!</button>
             </div>`
 
