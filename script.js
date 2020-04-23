@@ -276,14 +276,14 @@ function gameOver(){
     gameAreaDOM.innerHTML=""
      
     let html=""
-    if(highScore == null){
-        console.log("hit the null condition!")
-    }
-    if(highScore != null){
-    if(score > highScore.score){
-        html += '<h3>Congrats, new high score!!</h3>'
-    }
-}
+//     if(highScore == null){
+//         console.log("hit the null condition!")
+//     }
+//     if(highScore != null){
+//     if(score > highScore.score){
+//         html += '<h3>Congrats, new high score!!</h3>'
+//     }
+// }
 
      html += `<div class='gameOverDiv'>
         <h1>GAME OVER!! </h1>
@@ -296,7 +296,7 @@ function gameOver(){
 
     gameAreaDOM.innerHTML=html;
     scorerowDOM.innerHTML=""
-    scorerowDOM.innerHTML=`<div style="display:flex;align-items:center;justify-content:space-evenly;background:rgb(0,255,0,0.2)"<h1>Game Over</h1><div><h3>Score:${score}</h3><h3>HighScore:${highScore.score}</h3>            <button onclick=restart() class='replayBtn'>Play Again!</button></div>`
+    scorerowDOM.innerHTML=`<div style="display:flex;align-items:center;justify-content:space-evenly;background:rgb(0,255,0,0.2)"<h1>Game Over</h1><div><h3>Score:${score}</h3><button onclick=restart() class='replayBtn'>Play Again!</button></div>`
 
 
     setHighScore(score)
