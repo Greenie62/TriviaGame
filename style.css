@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    position:relative;
+}
+
+/* header */
+
+header, footer{
+    background:rgb(255,0,0,.3)
+}
+
+.one{
+    left:20%;
+    text-decoration:underline;
+}
+
+.two{
+    left:40%;
+    text-decoration:underline;
+}
+
+.scorerow{
+    height:10vh;
+    background:rgb(0,0,255,0.2);
+}
+
+.inforow{
+    background:rgb(0,255,0,0.3);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+
+
+.gamearea{
+    height:50vh;
+    background:rgb(0,0,255,0.2);
+    justify-content:space-evenly;
+    align-items:center;
+    display:flex;
+    overflow:auto;
+}
+
+.startDiv, .gameOptionsPanel, .gameOverDiv{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    border-radius:50%;
+    background:rgb(255,0,0,.2);
+    border:1px black;
+    padding:2em 2em;
+}
+
+.gameOverDiv{
+    top:600px;
+    transition:1s ease;
+    animation:popup 2s forwards;
+    background:rgb(255,0,0,0.2);
+    left:15%;
+    box-shadow:2px 1px gray;
+}
+
+
+@keyframes popup{
+    0%{top:600px}
+    100%{top:0px}
+}
+
+.gameOptionsPanel{
+    background:rgb(0,255,0,0.2);
+    animation:slide 1s forwards;
+    transition:1s;
+}
+
+@keyframes slide{
+    0%{left:-500px}
+    100%{left:0px}
+}
+
+.startBtn, .startGameBtn, .replayBtn{
+    background-color:rgb(0,255,0,.2);
+    width:50px;
+    height:20px;
+    cursor:pointer;
+    text-transform:uppercase;
+    margin:5px 0px;
+}
+
+.replayBtn{
+    background:rgb(0,255,0,0.2);
+    height:40px;
+}
+
+.replayBtn:hover{
+    text-decoration:underline;
+}
+
+
+.startGameBtn{
+    background-color:rgb(255,0,0,0.3)
+}
+
+.startImg{
+    border-radius:35%;
+}
+
+.startBtn:hover{
+    text-decoration:underline;
+}
+
+.startGameBtn:hover{
+    text-decoration:underline;
+}
+
+
+.startImg{
+    height:150px;
+}
+
+
+#category{
+    background:lightgray;
+    height:30px;
+    width:250px;
+    left:5%;
+    font-size:18px;
+}
+
+
+
+#length{
+    width:60px;
+
+}
+
+
+.cardDiv{
+    height:200px;
+    width:200px;
+    border:1px solid black;
+    padding:.25em;
+    border-radius:5%;
+    transition:1s;
+    box-shadow:0 0 2px 2px rgb(0,0,0,0.2);
+    background:linear-gradient(to right,lightgray,lightgray)
+}
+
+.answer-list{
+    top:10%;
+    left:15%;
+}
+
+.answerh3{
+    transform:rotateY(180deg);
+    left:-20%;
+    font-size:25px;
+    top:35%;
+    text-transform:uppercase;
+}
+
+.right{
+    color:green
+}
+
+.wrong{
+    color:red;
+}
+
+.answer-item{
+    list-style:none;
+}
+
+.answer-item:hover{
+    color:green;
+}
+
+
+/* footer */
+
+
+.footer-links{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-item{
+    list-style:none;
+    margin:0 4px;
+}
+
+.footer-item > a{
+    color:black;
+}
