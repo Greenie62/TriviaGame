@@ -164,7 +164,7 @@ function createScoreRow({category,length}){
 
 function printQuiz(quiz){
     gameAreaDOM.style.display="grid";
-    gameAreaDOM.style.gridTemplateColumns=`repeat(2,1fr)`
+    gameAreaDOM.style.gridTemplateColumns=`repeat(1,1fr)`
     gameAreaDOM.style.gap="5px"
     quiz.forEach((q,idx)=>{
         printQuestion(q,idx)
@@ -276,9 +276,11 @@ function gameOver(){
     gameAreaDOM.innerHTML=""
      
     let html=""
+    if(highScore.score != undefined){
     if(score > highScore.score){
         html += '<h3>Congrats, new high score!!</h3>'
     }
+}
 
      html += `<div class='gameOverDiv'>
         <h1>GAME OVER!! </h1>

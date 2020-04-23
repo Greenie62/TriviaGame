@@ -197,3 +197,10 @@ header, footer{
 .footer-item > a{
     color:black;
 }
+
+@media screen and (min-width:500px){
+    .cardDiv{
+        width:400px;
+        left:15%;
+    }
+}
