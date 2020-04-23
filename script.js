@@ -276,7 +276,7 @@ function gameOver(){
     gameAreaDOM.innerHTML=""
      
     let html=""
-    if(highScore.score != undefined){
+    if(highScore){
     if(score > highScore.score){
         html += '<h3>Congrats, new high score!!</h3>'
     }
